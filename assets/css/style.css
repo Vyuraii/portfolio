@@ -1,0 +1,44 @@
+:root {
+    --bg-cream: #FDFCF0;
+    --soft-brown: #A68A64;
+    --dark-brown: #5C4D3C;
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg-cream);
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-brown);
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+}
+
+.btn-aesthetic {
+    background-color: var(--soft-brown);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.3s;
+}
+
+.btn-aesthetic:hover {
+    background-color: var(--dark-brown);
+    color: white;
+}
+
+.card-custom {
+    border: none;
+    border-radius: 15px;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(166, 138, 100, 0.1);
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #A68A64, #5C4D3C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

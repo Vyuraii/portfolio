@@ -1,0 +1,208 @@
+/* =======================================================
+   AUTUMN AESTHETIC THEME - sepatustyle.css
+   ======================================================= */
+*{
+    box-sizing:border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, #f7e7d4, #f4d7b7);
+    color:#4a3728;
+    margin:0;
+    padding:20px;
+    overflow-x:hidden;
+}
+
+/* Wrapper */
+#wrapper{
+    max-width:960px;
+    margin:0 auto;
+    background:#fff8f0;
+    border-radius:12px;
+    box-shadow:0 6px 25px rgba(0,0,0,0.15);
+    position:relative;
+    z-index:2;
+}
+
+/* =======================================================
+   HEADER
+   ======================================================= */
+header{
+    padding:22px 28px;
+    background:#c46b2a;
+    color:#fff7e6;
+    border-radius:12px 12px 0 0;
+    position:relative;
+    overflow:hidden;
+}
+header h1{
+    margin:0;
+    font-size:26px;
+}
+header .subtitle{
+    margin:4px 0 0;
+    font-size:14px;
+    opacity:0.85;
+}
+
+/* Mini daun dekoratif */
+header::after{
+    content:"🍁";
+    font-size:60px;
+    position:absolute;
+    right:20px;
+    top:10px;
+    opacity:0.18;
+}
+
+/* =======================================================
+   NAVIGATION
+   ======================================================= */
+nav{
+    margin-top:15px;
+}
+nav .navbtn{
+    display:inline-block;
+    background:#e0812c;
+    color:#fff;
+    padding:10px 14px;
+    border-radius:6px;
+    margin-right:8px;
+    font-size:14px;
+    text-decoration:none;
+    transition:0.2s;
+}
+nav .navbtn:hover{
+    background:#b65f1d;
+}
+
+/* =======================================================
+   MAIN CONTENT
+   ======================================================= */
+main{
+    padding:28px;
+}
+
+/* Card Layout */
+.card{
+    background:#fff4e6;
+    border:1px solid #f0c79b;
+    padding:22px;
+    border-radius:10px;
+    margin-bottom:22px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.07);
+}
+
+/* Form */
+.form label{
+    display:block;
+    margin-bottom:12px;
+    font-weight:600;
+    color:#6b4a35;
+}
+.form input[type="text"], 
+.form input[type="number"], 
+.form select{
+    width:100%;
+    padding:12px;
+    border:1px solid #d9b38c;
+    border-radius:6px;
+    margin-top:6px;
+    font-size:14px;
+    background:#fffdf8;
+}
+.form .form-actions{margin-top:16px;}
+
+.btn{
+    display:inline-block;
+    background:#d87228;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    cursor:pointer;
+    border:none;
+    font-size:14px;
+    transition:0.2s;
+}
+.btn:hover{
+    background:#a9561d;
+}
+.btn.alt{
+    background:#b6a091;
+}
+.btn.alt:hover{
+    background:#8e7a68;
+}
+
+/* Error Box */
+.error{
+    background:#fff0f0;
+    border:1px solid #ffb3b3;
+    padding:10px;
+    margin-bottom:16px;
+    border-radius:6px;
+}
+
+/* TABLE HASIL */
+.result-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.result-table th{
+    width:35%;
+    text-align:left;
+    padding:10px;
+    background:#f9dcc0;
+    color:#4b382a;
+}
+
+.result-table td{
+    padding:10px;
+    background:#fff;
+    border-bottom:1px solid #f1d5b5;
+}
+
+.result-table tr.total th,
+.result-table tr.total td{
+    background:#f1f7e9;
+    font-weight:700;
+    color:#355b2c;
+}
+
+/* =======================================================
+   FOOTER
+   ======================================================= */
+footer{
+    padding:16px;
+    background:#fff0e0;
+    text-align:center;
+    color:#6b4a35;
+    font-size:13px;
+    border-top:1px solid #e1b899;
+    border-radius:0 0 12px 12px;
+}
+
+/* =======================================================
+   ANIMASI DAUN GUGUR
+   ======================================================= */
+.leaf{
+    position:fixed;
+    top:-10vh;
+    font-size:28px;
+    opacity:0.8;
+    animation:fall linear infinite;
+    z-index:1;
+}
+
+/* Animasi gugur */
+@keyframes fall{
+    0%{
+        transform:translateX(0) rotate(0deg);
+    }
+    100%{
+        transform:translateY(110vh) translateX(30px) rotate(360deg);
+    }
+}
